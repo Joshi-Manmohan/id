@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>World Photo Gallery</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item" onclick="openModal('image1.jpg')">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item" onclick="openModal('image2.jpg')">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item" onclick="openModal('image3.jpg')">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+    </main>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
